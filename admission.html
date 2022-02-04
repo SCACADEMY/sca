@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="ICON" type="image/jpg" href="img/SHYAM COMPUTER ACADEMY-logos.jpeg">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js"
+  />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #btnScrollToTop{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: gray;
+            box-shadow: 0 0 10px rgb(0, 0, 0,0.25);
+            color: white;
+            outline: none;
+            cursor: pointer;
+            border: none;
+        }
+        #btnScrollToTop:active{
+            background: brown;
+        }
+    </style>
+    <style>
+        
+    </style>
+    <title>Admission | SCA</title>
+</head>
+<body class="light-theme">
+    <nav class="background navbar  h-navresp">
+        <ul class="nav-list v-classresp">
+            <li><div class="logo"><img src="IMG/SHYAM COMPUTER ACADEMY-logos.jpeg" alt="logo"></div></li>
+            <!----------------------------------------->
+            <li>
+                <label class="switch">
+                  <i class="fas fa-adjust"></i>
+                  <div>
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </div>
+                </label>
+            </li>
+      
+            <!----------------------------------------->
+
+            
+            <li><a href="#Home"><a href="index.html">Home</a></li>
+            <li><a href="#About">Admission</a></li>
+            <li><a href="#Services"><a href="Blog.html">Blog</a></li>
+            <li><a href="#contact"><a href="index.html#contact">Contact us</a> </a></li>
+        </ul>
+        <div class="rightNav v-classresp">
+            <form class="example" id="example">
+                <input type="text" id="query" placeholder="Search.." name="search" aria-label="Search through site content">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            
+        </div>
+        <div class="resplogo">
+            <a href="admission.html"><button class="nav-resp1"><img src="IMG/SHYAM COMPUTER ACADEMY-logos.jpeg" alt="logo"></button> </a>
+        </div> 
+    </nav>
+    <section class="background1 firstSection">
+       
+        <div class="box-main">
+            
+            <div class="firstHalf">
+                <p class="text-big">SHYAM COMPUTER ACADEMY</p>
+                <p class="text">FILL UP THE FORM AND WAIT FOR A SECOND</p>
+                <!------------------------------------------>
+                <div class="button">
+                   <p><a href="https://youtu.be/LWRAj8KgN1I"><button class="btn"><b>Watch video</u></button></a></p>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="thumbnail">
+            <img src="IMG/admission.gif" alt="Admission">
+        </div>
+    </section>
+    <section class="section">
+        <h1 class="text-big center"><u><i>Admission FORM</i></u></h1>
+    </section>
+        <div class="outerbox">
+            <div class="form">
+                <form id="form">
+                    <input type="text" name="Name" id="name" placeholder="Enter your name" required>
+                    <br>
+                    <input type="text" name="Address" id="Address" placeholder="Enter your Address" required>
+                    <br>
+                    <input type="text" name="Gender" id="Gender" placeholder="Enter your Gender[M/F]" required>
+                    <br>
+                    <input type="text" name="PhoneNo" id="phno" placeholder="Enter your phone" required>
+                    <br>
+                    <input type="email" name="Email" id="email" placeholder="Enter your Email" required>
+                    <br>
+                    <input type="text" name="Suggeation" id="Suggeation" placeholder="Enter a Time[9AM-8PM] to meet" required>
+                    <br>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p class="copy background2">  Copyright &copy CODE-WITH-VDR,All Rights Reserved.</p>
+    </footer>
+    <script>
+        burger=document.querySelector('.burger')
+        navbar=document.querySelector('.navbar')
+        navList=document.querySelector('.nav-list')
+        rightNav=document.querySelector('.rightNav')
+        
+        burger.addEventListener('click',()=>{
+        rightNav.classList.toggle('v-classresp');
+        navList.classList.toggle('v-classresp');
+        navbar.classList.toggle('h-navresp');
+        })
+    </script>
+    <script>
+        const themeSwitch = document.querySelector('input');
+        themeSwitch.addEventListener('change', () => {
+        document.body.classList.toggle('dark-theme');
+        });
+    </script>
+</body>
+</html>
